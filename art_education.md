@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     G(GCSE):::preferredPath ==>|2 years| IAL(A-Levels 
                             2 years)
@@ -25,4 +26,4 @@ flowchart TD
             need work experience first)                
 
 classDef preferredPath stroke:#0f0,fill:#898
-  
+```  
