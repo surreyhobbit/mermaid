@@ -1,0 +1,28 @@
+flowchart TD
+    G(GCSE):::preferredPath ==>|2 years| IAL(A-Levels 
+                            2 years)
+    IAL --> U(University)
+    IAL -->|public| FF(Vorkurs F+F 
+                    Propädeutikum
+                    1 year)
+    IAL -->|public| SFGZ(SFGZ
+                    Schule für Gestaltung Zürich
+                    gestalterischer 
+                    Vorkurs)
+    IAL --x|most expensive| SKDZ(SKDZ)
+    FF --> U
+    FF --> FH(Bachelor FH
+                Salary @end 30-40% more after FH
+                more academic than HF, 
+                otherwise similar):::preferredPath
+    IAL -.->|Vorkurs nicht obligatorisch| FH
+    FF --> EFZ(Lehre EFZ
+                4 years)
+    EFZ --> FH
+    FF --> EFZFF(F+F 
+                Fachklasse Grafik)
+    FF --x HF(e.g. SFGZ
+            need work experience first)                
+
+classDef preferredPath stroke:#0f0,fill:#898
+  
